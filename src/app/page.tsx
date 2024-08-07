@@ -18,7 +18,7 @@ export default function Home() {
 
       <section className="flex flex-col items-center w-full space-y-7 ">
         <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="37.5" cy="37.5" r="37.5" fill="#E11D48"/>
+          <circle cx="37.5" cy="37.5" r="37.5" fill="#E11D48" />
         </svg>
         <h1 className="text-4xl font-extrabold uppercase">Sphere</h1>
 
@@ -37,11 +37,21 @@ export default function Home() {
               <Button type="submit">entrar</Button>
             </form>
           </TabsContent>
-          
+
           <TabsContent value="registrar">
-            <p>criar conta</p>
+            <form action="" className="space-y-2">
+              <Label htmlFor="nome">nome</Label>
+              <Input id="nome" />
+              <Label htmlFor="bio">bio</Label>
+              <Input id="bio" />
+              <Label htmlFor="email">email</Label>
+              <Input id="email" />
+              <Label htmlFor="senha">senha</Label>
+              <Input id="senha" type="password" />
+              <Button type="submit">entrar</Button>
+            </form>
           </TabsContent>
-        
+
         </Tabs>
 
 
